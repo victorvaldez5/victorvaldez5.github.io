@@ -1,0 +1,54 @@
+/* @import "base/static/base/css/index.css"; */
+
+body{
+    color: black;
+}
+
+.well-lg{
+    color: white;
+    align-content: center;
+    text-align: center;
+    font-family: cooperHewittSemibold;
+    background-color: #244c1a;
+    border-color: rgb(106, 149, 94);
+}
+.well-lg h2{
+    font-size: 44px;
+
+}
+.text-block{
+    text-align: left;
+}
+.jumbotron{
+    color: black;
+}
+.jumbotron h1{
+    text-align: center;
+}
+.navbar-brand {
+  padding: 0px;
+  margin: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  width: auto;
+}
+.navbar {
+    margin: 0px;
+    /*background-color: #244c1a; */
+}
+a, a:hover{
+    color: white;
+    text-decoration: none;
+}
+img{
+    height: 100%;
+    float:left;
+    margin: 10px;
+}
+ul{
+    padding-left: 20px;
+    font-family: cooperHewittMedium
+}

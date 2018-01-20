@@ -1,0 +1,85 @@
+@font-face {
+    font-family: cooperHewittMedium;
+    src: url('../fonts/CooperHewitt-Medium.otf');
+}
+@font-face {
+    font-family: cooperHewittLight;
+    src: url('../fonts/CooperHewitt-Light.otf');
+}
+@font-face{
+    font-family: cooperHewittSemibold;
+    src: url('../fonts/CooperHewitt-Semibold.otf');
+}
+@font-face{
+    font-family: cooperHewittBook;
+    src: url('../fonts/CooperHewitt-Book.otf');
+}
+@font-face{
+    font-family: cooperHewittBold;
+    src: url('../fonts/CooperHewitt-Bold.otf');
+}
+#header{
+    font-family: cooperHewittMedium;
+    font-size: 60px
+}
+#intro{
+    background-image: url("../img/index-main.jpeg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+div{
+    font-family: cooperHewittMedium;
+}
+p{
+    font-family: cooperHewittLight;
+    height: auto;
+}
+.navbar{
+    font-family: cooperHewittMedium;
+}
+#signup{
+    background-color: rgb(106, 149, 94);
+}
+.navbar li:hover{
+    background-color: lighten(rgb(106, 149, 94));
+}
+#platforms{
+        margin-top: 100px;
+        margin-bottom: 100px;
+}
+#platforms h1{
+    font-family: cooperHewittSemibold;
+    text-shadow: -2px 2px 2px gray;
+}
+
+.footnote-text{
+    font-size: 8px;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 0px;
+  width: auto;
+}
+.navbar .navbar-collapse{
+    margin: 0px;
+}
+.navbar {
+    margin: 0px;
+}
+label{
+    font-family: cooperHewittBold;
+}
+#footer{
+    background-color: #244c1a;
+    padding: 40px;
+}
+#content-text{
+    font-family: cooperHewittLight;
+    font-size: 18px;
+    overflow: hidden;
+}
