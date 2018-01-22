@@ -23,9 +23,22 @@
     font-size: 60px
 }
 #intro{
-    background-image: url("../img/index-main.jpeg");
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+@media(min-width: 600px){
+    #intro{
+    background-image: url("../img/index-main.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    }
+}
+@media(max-width:599px){
+    #intro{
+    background-image: url("../img/index-main-sm.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
 }
 
 div{
@@ -39,7 +52,9 @@ p{
     font-family: cooperHewittMedium;
 }
 #signup{
-    background-color: rgb(106, 149, 94);
+    color: black;
+    background-blend-mode: overlay;
+    text-shadow: 0px 0px 0px;
 }
 .navbar li:hover{
     background-color: lighten(rgb(106, 149, 94));
@@ -82,4 +97,18 @@ label{
     font-family: cooperHewittLight;
     font-size: 18px;
     overflow: hidden;
+}
+#text-group{
+    padding-top: 50px;
+}
+#platform-row{
+    margin-top: 50px;
+}
+#platform-row:last-child{
+    
+
+}
+#platform-row:first-child{
+    margin-top: 0px;
+
 }

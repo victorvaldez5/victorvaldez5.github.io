@@ -52,3 +52,6 @@ ul{
     padding-left: 20px;
     font-family: cooperHewittMedium
 }
+.list-group-item-success, .list-group-item:last-child, .list-group-item:first-child{
+    border-radius: 25px;
+}
