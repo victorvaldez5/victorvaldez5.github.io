@@ -26,7 +26,7 @@
     color: white;
     text-shadow: 1px 1px 1px black;
 }
-@media(min-width: 600px){
+/* @media(min-width: 600px){
     #intro{
     background-image: url("../img/index-main.jpg");
     background-size: 100% 100%;
@@ -39,7 +39,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     }
-}
+} */
 
 div{
     font-family: cooperHewittMedium;
@@ -105,7 +105,7 @@ label{
     margin-top: 50px;
 }
 #platform-row:last-child{
-    
+
 
 }
 #platform-row:first-child{
