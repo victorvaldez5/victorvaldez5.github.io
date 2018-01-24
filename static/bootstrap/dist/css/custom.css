@@ -13,7 +13,7 @@ body{
     border-color: rgb(106, 149, 94);
 }
 .well-lg h2{
-    font-size: 44px;
+    font-size: 38px;
 
 }
 .text-block{
@@ -54,7 +54,4 @@ ul{
 }
 .list-group-item-success, .list-group-item:last-child, .list-group-item:first-child{
     border-radius: 25px;
-}
-.well{
-    max-height: inherit;
 }
