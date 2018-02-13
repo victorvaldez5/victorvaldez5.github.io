@@ -17,35 +17,48 @@
 
 <body>
     <nav class='navbar navbar-default'>
-        <div class='container-fluid'>
-            <div class='navbar navbar-header'>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-                <img class='navbar-brand' src="static/base/img/temp_logo.png"></img>
-            </div>
-            <div class='collapse navbar-collapse' id='collapse-navbar'>
-                <div class='navbar navbar-right'>
-                    <ul class='nav navbar-nav'>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="platforms.html">Platforms</a></li>
-                        <li><a href="candidates.html">Candidates</a></li>
-                        <li><a data-toggle='collapse' data-target='#not-working-alert'>More</a></li>
-                    </ul>
-                    <button class='btn btn-primary navbar-btn' id='button'><a href='http://www.k-state.edu/elections/'>Vote here</a></button>
+            <div class='container-fluid'>
+                <div class='navbar navbar-header'>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <img class='navbar-brand' src="static/base/img/temp_logo.png"></img>
+                </div>
+                <div class='collapse navbar-collapse' id='collapse-navbar'>
+                    <div class='navbar navbar-right'>
+                        <ul class='nav navbar-nav'>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="platforms.html">Platforms</a></li>
+                            <li><a href="candidates.html">Candidates</a></li>
+                            <li><button type="button" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#typeformModal"/>Sign up</li>
+                            <li><button class='btn btn-primary navbar-btn' id='button'><a href='http://sgaelections.ksu.edu'>Vote here</a></button></li>
+                        </ul>
+                        
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-
+        </nav>
+        <div class="modal fade" id="typeformModal" tabindex="-1" role="dialog" aria-labelledby="typeformModalLabel">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                      <h4 class="modal-title text-center">Sign up and stay connected!</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="typeform-widget" data-url="https://victorvaldez1.typeform.com/to/fBs6Zf" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=fBs6Zf&utm_source=typeform.com-11759207-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>  
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
     <div class="container-fluid">
-        <div class='collapse' id='not-working-alert'>
-            <div class='alert alert-danger' role='alert'>This Link is currently not working, sorry for the inconvenience!</div>
-        </div>
         <div class="row">
             <div class="jumbotron">
                 <h1>Platforms Dedicated to Improving Your Campus</h1>
@@ -92,7 +105,7 @@
                 <h2 class="page-header">Expect More Affordability</h2>
                 <div class="panel-group">
                     <div class="panel panel-default">
-                        <button class="btn-block btn-success" data-toggle="collapse" href="#p1-bl-1">
+                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p1-bl-1">
                             <div class="panel-heading">
                             <h4 class="panel-title">
                                 Online Academic Resources
@@ -115,7 +128,7 @@
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <button class="btn-block btn-success" data-toggle="collapse" href="#p1-bl-2"> <div class="panel-heading"> <h4 class="panel-title"> Out-of-State Tuition Costs </h4> </div></button>
+                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p1-bl-2"> <div class="panel-heading"> <h4 class="panel-title"> Out-of-State Tuition Costs </h4> </div></button>
                         <div id='p1-bl-2' class="panel-collapse collapse">
                             <div class="panel-body lead">Developing a more affordable program for out of state students who are overpaying for education, essentially increasing the value for students attending so that they do not run out of money and can attend K-State without paying
                                 thousands upon thousands of extra dollars. Working with KBOR and administration to carry this out.</div>
@@ -131,7 +144,7 @@
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <button class="btn-block btn-success" data-toggle="collapse" href="#p1-bl-3">
+                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p1-bl-3">
                         <div class="panel-heading"><h4 class="panel-title">Reevaluation of the Scholarship Process</h4></div></button>
                         <div id='p1-bl-3' class="panel-collapse collapse">
                             <div class="panel-body lead">Easing the penalties put out to students who do not meet the semester requirements to keep a scholarship granted to them by the University, and providing them resources to mitigate their loss. This keeps high quality students
@@ -159,7 +172,7 @@
                 <h2 class="page-header"> Expect More Accessibility</h2>
                 <div class="panel-group">
                     <div class="panel panel-default">
-                        <button class="btn-block btn-success" data-toggle="collapse" href="#p2-bl-1">
+                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p2-bl-1">
                             <div class="panel-heading"><h4 class="panel-title">Centralized Resource Portal for Students</h4></div></button>
                         <div id='p2-bl-1' class="panel-collapse collapse">
                             <div class="panel-body lead">
@@ -181,7 +194,7 @@
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <button class="btn-block btn-success" data-toggle="collapse" href="#p2-bl-2"><div class="panel-heading"> <h4 class="panel-title"> Online Orientation Modules </h4> </div></button>
+                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p2-bl-2"><div class="panel-heading"> <h4 class="panel-title"> Online Orientation Modules </h4> </div></button>
                         <div id='p2-bl-2' class="panel-collapse collapse">
                             <div class="panel-body lead">Upon being accepted to Kansas State, students are given the option to begin a short online training to learn more about the resources KSU has to offer, by doing so, this gets them engaged in the university straight off the
                                 bat, and helps them to remember the resources K-State has to offer. This program alleviates the stress put upon students to retain everything they learn on their Orientation and Enrollment day, and allows them to begin
@@ -213,14 +226,14 @@
                 <h2 class="page-header">Expect More Accountability</h2>
                 <div class="panel-group">
                     <div class="panel panel-default">
-                        <button class="btn-block btn-success" data-toggle="collapse" href="#p3-bl-1"> <div class="panel-heading"> <h4 class="panel-title"> Student Body President, Vice President Mobile Office Hours </h4> </div></button>
+                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p3-bl-1"> <div class="panel-heading"> <h4 class="panel-title"> Student Body President, Vice President Mobile Office Hours </h4> </div></button>
                         <div id='p3-bl-1' class="panel-collapse collapse">
                             <div class="panel-body lead">While we can’t commit to being at every student organization every week, we can commit to being present on campus, and willing to listen to the needs of students.
                             </div>
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <button class="btn-block btn-success" data-toggle="collapse" href="#p3-bl-2"><div class="panel-heading"><h4 class="panel-title"> SGA Newsletter & SGA Improvements</h4></div></button>
+                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p3-bl-2"><div class="panel-heading"><h4 class="panel-title"> SGA Newsletter & SGA Improvements</h4></div></button>
                         <div id='p3-bl-2' class="panel-collapse collapse">
                             <div class="panel-body lead">Sent out every two weeks with information from each branch leaders, update from senate committees, sharing of student resources on campus, etc. Utilize the SGA all student listserv in order to create greater transparency with
                                 the student body (This is something that has been started with the current administration that we would like to see continue to grow)</div>
@@ -235,7 +248,7 @@
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <button class="btn-block btn-success" data-toggle="collapse" href="#p3-bl-3"><div class="panel-heading"><h4 class="panel-title"> Amplifying and Assessing the Needs of Students as SGA Leaders</h4></div></button>
+                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p3-bl-3"><div class="panel-heading"><h4 class="panel-title"> Amplifying and Assessing the Needs of Students as SGA Leaders</h4></div></button>
                         <div id='p3-bl-3' class="panel-collapse collapse">
                             <div class="panel-body lead">
                             </div>
@@ -252,7 +265,7 @@
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <button class="btn-block btn-success" data-toggle="collapse" href="#p3-bl-4"><div class="panel-heading"> <h4 class="panel-title"> Multicultural Student Center </h4> </div></button>
+                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p3-bl-4"><div class="panel-heading"> <h4 class="panel-title"> Multicultural Student Center </h4> </div></button>
                         <div id='p3-bl-4' class="panel-collapse collapse">
                             <div class="panel-body lead">
                             </div>
@@ -267,6 +280,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <footer class='row' id='footer'>
             <div class='col-sm-3'>
                 <ul class='list-inline text-left'>
@@ -279,13 +293,13 @@
                 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class='img-responsive' alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
             </div>
             <div class='col-sm-3 col-sm-offset-6'>
-                <img class='img-responsive' src="static/base/img/temp-logo-button.png" alt='logo'></img>
+                <img class='img-responsive' src="static/base/img/KPTransparent.png" alt='logo'></img>
             </div>
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 
 </html>

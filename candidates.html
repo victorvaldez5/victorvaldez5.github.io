@@ -12,31 +12,48 @@
 </head>
 
 <body>
-    <nav class='navbar navbar-default'>
-        <div class='container-fluid'>
-            <div class='navbar navbar-header'>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <img class='navbar-brand' src="static/base/img/temp_logo.png"></img>
-            </div>
-            <div class='collapse navbar-collapse' id='collapse-navbar'>
-                <div class='navbar navbar-right'>
-                    <ul class='nav navbar-nav'>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="platforms.html">Platforms</a></li>
-                        <li><a href="candidates.html">Candidates</a></li>
-                        <li><a data-toggle='collapse' data-target='#not-working-alert'>More</a></li>
-                    </ul>
-                    <button class='btn btn-primary navbar-btn' id='button'><a href='http://www.k-state.edu/elections/'>Vote here</a></button>
+        <nav class='navbar navbar-default'>
+                <div class='container-fluid'>
+                    <div class='navbar navbar-header'>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <img class='navbar-brand' src="static/base/img/temp_logo.png"></img>
+                    </div>
+                    <div class='collapse navbar-collapse' id='collapse-navbar'>
+                        <div class='navbar navbar-right'>
+                            <ul class='nav navbar-nav'>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="platforms.html">Platforms</a></li>
+                                <li><a href="candidates.html">Candidates</a></li>
+                                <li><button type="button" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#typeformModal"/>Sign up</li>
+                                <li><button class='btn btn-primary navbar-btn' id='button'><a href='http://sgaelections.ksu.edu'>Vote here</a></button></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </nav>
+            </nav>
+            <div class="modal fade" id="typeformModal" tabindex="-1" role="dialog" aria-labelledby="typeformModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title text-center">Sign up and stay connected!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="typeform-widget" data-url="https://victorvaldez1.typeform.com/to/fBs6Zf" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=fBs6Zf&utm_source=typeform.com-11759207-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>  
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                  </div><!-- /.modal -->
 
 
 
@@ -87,14 +104,13 @@
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class='img-responsive' alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
         </div>
         <div class='col-sm-3 col-sm-offset-6'>
-            <img class='img-responsive' src="static/base/img/temp-logo-button.png" alt='logo'></img>
+                <img class='img-responsive' src="static/base/img/KPTransparent.png" alt='logo'></img>
         </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="static/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 
 </html>
