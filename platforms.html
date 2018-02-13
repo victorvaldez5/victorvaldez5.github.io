@@ -10,54 +10,75 @@
     <link rel='stylesheet' href="static/bootstrap/dist/css/bootstrap.css" />
     <link rel='stylesheet' href="static/bootstrap/dist/css/custom.css" />
     <link rel="stylesheet" type="text/css" href="static/base/css/index.css" />
-    <link rel='stylesheet' href="static/base/css/platform.css" />
+    <link rel='stylesheet' href="static/base/css/platforms.css" />
 
     <title>Learn about our platforms - kp</title>
 </head>
 
 <body>
     <nav class='navbar navbar-default'>
-            <div class='container-fluid'>
-                <div class='navbar navbar-header'>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+        <div class='container-fluid'>
+            <div class='navbar navbar-header'>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                    <a href="index.html"><img class='navbar-brand' src="static/base/img/temp_logo.png"></img></a>
-                </div>
-                <div class='collapse navbar-collapse' id='collapse-navbar'>
-                    <div class='navbar navbar-right'>
-                        <ul class='nav navbar-nav'>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="platforms.html">Platforms</a></li>
-                            <li><a href="candidates.html">Candidates</a></li>
-                            <li><button type="button" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#typeformModal"/>Sign up</li>
-                            <li><button class='btn btn-primary navbar-btn' id='button'><a href='http://sgaelections.ksu.edu'>Vote here</a></button></li>
-                        </ul>
-                        
-                    </div>
+                <a href="index.html"><img class='navbar-brand' src="static/base/img/temp_logo.png"></img></a>
+            </div>
+            <div class='collapse navbar-collapse' id='collapse-navbar'>
+                <div class='navbar navbar-right'>
+                    <ul class='nav navbar-nav'>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="platforms.html">Platforms</a></li>
+                        <li><a href="candidates.html">Candidates</a></li>
+                        <li><button type="button" class="btn btn-danger navbar-btn" data-toggle="modal" data-target="#typeformModal" />Sign up</li>
+                        <li><button class='btn btn-primary navbar-btn' id='button'><a href='http://sgaelections.ksu.edu'>Vote here</a></button></li>
+                    </ul>
+
                 </div>
             </div>
-        </nav>
-        <div class="modal fade" id="typeformModal" tabindex="-1" role="dialog" aria-labelledby="typeformModalLabel">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                      <h4 class="modal-title text-center">Sign up and stay connected!</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="typeform-widget" data-url="https://victorvaldez1.typeform.com/to/fBs6Zf" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=fBs6Zf&utm_source=typeform.com-11759207-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>  
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
-              </div><!-- /.modal -->
+        </div>
+    </nav>
+    <div class="modal fade" id="typeformModal" tabindex="-1" role="dialog" aria-labelledby="typeformModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center">Sign up and stay connected!</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="typeform-widget" data-url="https://victorvaldez1.typeform.com/to/fBs6Zf" style="width: 100%; height: 500px;"></div>
+                    <script>
+                        (function() {
+                            var qs, js, q, s, d = document,
+                                gi = d.getElementById,
+                                ce = d.createElement,
+                                gt = d.getElementsByTagName,
+                                id = "typef_orm",
+                                b = "https://embed.typeform.com/";
+                            if (!gi.call(d, id)) {
+                                js = ce.call(d, "script");
+                                js.id = id;
+                                js.src = b + "embed.js";
+                                q = gt.call(d, "script")[0];
+                                q.parentNode.insertBefore(js, q)
+                            }
+                        })()
+                    </script>
+                    <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=fBs6Zf&utm_source=typeform.com-11759207-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a>                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
     <div class="container-fluid">
         <div class="row">
             <div class="jumbotron">
@@ -196,10 +217,6 @@
                     <div class="panel panel-default">
                         <button class="btn btn-block btn-success" data-toggle="collapse" href="#p2-bl-2"><div class="panel-heading"> <h4 class="panel-title"> Online Orientation Modules </h4> </div></button>
                         <div id='p2-bl-2' class="panel-collapse collapse">
-                            <div class="panel-body lead">Upon being accepted to Kansas State, students are given the option to begin a short online training to learn more about the resources KSU has to offer, by doing so, this gets them engaged in the university straight off the
-                                bat, and helps them to remember the resources K-State has to offer. This program alleviates the stress put upon students to retain everything they learn on their Orientation and Enrollment day, and allows them to begin
-                                getting used to campus life, and making valuable connections. This program would remain on Students canvas account indefinitely as a means of information following their completion of the course. Put in place in many other
-                                universities, Inverted Orientation has been proven to enhance students experiences before they even set foot on campus.</div>
                             <ul class="list-group">
                                 <li class="list-group-item">Every new K-State student is required to go through some orientation session before enrolling in their classes for the semester. This day can look differently for every student depending on their major, traditional or non-traditional,
                                     transfer or international students. The one thing they have in common is that the orientation process is supposed to give them all the information they need to be a successful K-State student. Throughout the day students
@@ -226,10 +243,9 @@
                 <h2 class="page-header">Expect More Accountability</h2>
                 <div class="panel-group">
                     <div class="panel panel-default">
-                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p3-bl-1"> <div class="panel-heading"> <h4 class="panel-title"> Student Body President, Vice President Mobile Office Hours </h4> </div></button>
+                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p3-bl-1"><div class="panel-heading"><h4 class="panel-title">SGA Mobile Office Hours</h4></div></button>
                         <div id='p3-bl-1' class="panel-collapse collapse">
-                            <div class="panel-body lead">While we can’t commit to being at every student organization every week, we can commit to being present on campus, and willing to listen to the needs of students.
-                            </div>
+                            <div class="panel-body lead">While we can’t commit to being at every student organization every week, we can commit to being present on campus, and willing to listen to the needs of students.</div>
                         </div>
                     </div>
                     <div class="panel panel-default">
@@ -248,10 +264,8 @@
                         </div>
                     </div>
                     <div class="panel panel-default">
-                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p3-bl-3"><div class="panel-heading"><h4 class="panel-title"> Amplifying and Assessing the Needs of Students as SGA Leaders</h4></div></button>
+                        <button class="btn btn-block btn-success" data-toggle="collapse" href="#p3-bl-3"><div class="panel-heading"><h4 class="panel-title">SGA Leaders Assessing Student Needs</h4></div></button>
                         <div id='p3-bl-3' class="panel-collapse collapse">
-                            <div class="panel-body lead">
-                            </div>
                             <ul class="list-group">
                                 <li class="list-group-item">Institutionalizing Cats for Inclusion: Wildcat Dialogues
                                 </li>
@@ -267,8 +281,6 @@
                     <div class="panel panel-default">
                         <button class="btn btn-block btn-success" data-toggle="collapse" href="#p3-bl-4"><div class="panel-heading"> <h4 class="panel-title"> Multicultural Student Center </h4> </div></button>
                         <div id='p3-bl-4' class="panel-collapse collapse">
-                            <div class="panel-body lead">
-                            </div>
                             <ul class="list-group">
                                 <div class="list-group-item">Following through on a vision and plan that includes the needs of all underrepresented groups on campus</div>
                                 <div class="list-group-item">Increase transparency between students and the administration as to where we are at in the process of fundraising</div>
@@ -281,25 +293,25 @@
             </div>
         </div>
     </div>
-        <footer class='row' id='footer'>
-            <div class='col-sm-3'>
-                <ul class='list-inline text-left'>
-                    <li><a href='https://www.facebook.com/kiehlpitts/?fref=mentions'>Facebook</a></li>
-                    <li><a href='https://twitter.com/kiehlpitts'>Twitter</a></li>
-                    <li><a href='#'>Contact Us</a></li>
-                </ul>
-                <span class='glyphicon glyphicon-copyright-mark'> Copyright 2017 Victor Valdez.</span>
-                <p class='small'>Code licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Docs, <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY-NC-SA 4.0</a></p>
-                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class='img-responsive' alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-            </div>
-            <div class='col-sm-3 col-sm-offset-6'>
-                <img class='img-responsive' src="static/base/img/KPTransparent.png" alt='logo'></img>
-            </div>
-        </footer>
+    <footer class='row' id='footer'>
+        <div class='col-sm-3'>
+            <ul class='list-inline text-left'>
+                <li><a href='https://www.facebook.com/kiehlpitts/?fref=mentions'>Facebook</a></li>
+                <li><a href='https://twitter.com/kiehlpitts'>Twitter</a></li>
+                <li><a href='#'>Contact Us</a></li>
+            </ul>
+            <span class='glyphicon glyphicon-copyright-mark'> Copyright 2017 Victor Valdez.</span>
+            <p class='small'>Code licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. Docs, <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY-NC-SA 4.0</a></p>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class='img-responsive' alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+        </div>
+        <div class='col-sm-3 col-sm-offset-6'>
+            <img class='img-responsive' src="static/base/img/KPTransparent.png" alt='logo'></img>
+        </div>
+    </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="static/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="static/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
